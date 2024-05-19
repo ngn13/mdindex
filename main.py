@@ -142,10 +142,10 @@ class Mdindex:
 
             self.headers[len(self.headers)-1].add(header)
 
-        gen = "<!-- INDEX BEGIN -->\n\n"
+        gen = self.begin_mark+"\n\n"
         for h in self.headers:
             gen += str(h)
-        gen += "\n<!-- INDEX END -->\n\n"
+        gen += "\n"+self.end_mark+"\n\n"
 
         data = gen+self.data
         return data
