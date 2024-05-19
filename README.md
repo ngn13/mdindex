@@ -1,6 +1,6 @@
 # mdindex
 
-![](mdindex.png)
+![](showcase.png)
 
 simple python script to create index (catalog) from markdown headers,
 like the emacs org mode
